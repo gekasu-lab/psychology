@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evgeny | MindCode Private Practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; transition: all 0.3s ease; }
+        .lang-ru { display: none; } 
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid #e2e8f0; }
+        .hero-bg { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased scroll-smooth">
+
+    <nav class="fixed w-full z-50 glass">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tight text-slate-900 uppercase">
+                <span>Evgeny <span class="text-blue-600">MindCode</span></span>
+                <span class="text-xs font-normal text-slate-400 block tracking-widest mt-1 uppercase">
+                    <span class="lang-de">Psychologischer Berater</span>
+                    <span class="lang-ru">Частная практика</span>
+                </span>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <div class="flex border border-slate-200 rounded-lg p-1 bg-white/50">
+                    <button onclick="switchLang('de')" id="btn-de" class="px-3 py-1 rounded text-xs font-bold transition bg-slate-100 text-blue-600">DE</button>
+                    <button onclick="switchLang('ru')" id="btn-ru" class="px-3 py-1 rounded text-xs font-bold transition text-slate-400 hover:text-slate-600">RU</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-24 hero-bg">
+        <div class="container mx-auto px-6 max-w-6xl flex flex-col-reverse md:flex-row items-center gap-12 text-center md:text-left">
+            
+            <div class="md:w-3/5">
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-600 text-xs font-bold tracking-wider mb-6 uppercase">Online Practice Worldwide</span>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight text-slate-900">
+                    <span class="lang-de">Mentale Freiheit <br>für <span class="text-blue-600">IT-Spezialisten</span>.</span>
+                    <span class="lang-ru">Ментальная свобода <br>для <span class="text-blue-600">IT-специалистов</span>.</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed max-w-xl mx-auto md:mx-0">
+                    <span class="lang-de">Mein Name ist Evgeny. Ich biete Privatberatung für Stressbewältigung und Psychosomatik an. Wir lösen emotionale "Bugs" auf Augenhöhe.</span>
+                    <span class="lang-ru">Меня зовут Евгений. Я веду частную практику по работе со стрессом и психосоматикой. Мы исправляем эмоциональные «баги» на одном языке.</span>
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="https://t.me/Gekasu" target="_blank" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:shadow-lg hover:bg-blue-700 transition transform hover:-translate-y-1 text-center">
+                        <span class="lang-de">Erstgespräch via Telegram</span><span class="lang-ru">Написать в Telegram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:w-2/5 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-blue-200 rounded-full blur-2xl opacity-30 animate-pulse"></div>
+                    <img src="me.jpg" alt="Evgeny - Psychologischer Berater" 
+                         class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-2xl grayscale hover:grayscale-0 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold mb-12 text-center underline decoration-blue-600 decoration-4 underline-offset-8 text-slate-900">
+                <span class="lang-de">Spezialisierung</span><span class="lang-ru">Специализация</span>
+            </h2>
+            <div class="bg-slate-50 p-8 md:p-12 rounded-[2rem] border border-slate-100 shadow-inner text-center md:text-left">
+                <h3 class="text-2xl font-bold mb-6 text-slate-900 italic">
+                    <span class="lang-de">Psychosomatik & IT-Stress</span><span class="lang-ru">Психосоматика и IT-стресс</span>
+                </h3>
+                <p class="text-slate-600 leading-relaxed mb-6 text-lg font-light">
+                    <span class="lang-de">Körperliche Symptome wie <strong>Magenbeschwerden</strong> oder <strong>Spasmen</strong> sind oft Signale eines überlasteten Nervensystems. Я helfe Ihnen, diese Signale zu dekodieren.</span>
+                    <span class="lang-ru">Телесные симптомы, такие как <strong>боли в ЖКТ</strong> или <strong>спазмы</strong> — это часто сигналы перегруженной нервной системы. Как консультант с IT-бэкграундом, я помогу вам «декодировать» эти сигналы.</span>
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 font-mono text-xs text-blue-600 uppercase tracking-tighter">
+                    <span>#VagusNerve</span>
+                    <span>#GutBrainAxis</span>
+                    <span>#CBT_Methods</span>
+                    <span>#NoModernSlavery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-20 bg-slate-900 text-slate-300">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">
+                <span class="lang-de">Kontaktieren Sie mich</span><span class="lang-ru">Связаться со мной</span>
+            </h2>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-8 mb-8">
+                <a href="mailto:gekasu@gmail.com" class="flex items-center justify-center gap-2 hover:text-white transition group">
+                    <span class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-blue-600 transition">✉️</span>
+                    gekasu@gmail.com
+                </a>
+                <a href="https://t.me/Gekasu" target="_blank" class="flex items-center justify-center gap-2 hover:text-white transition group">
+                    <span class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-blue-600 transition">📱</span>
+                    @Gekasu (Telegram)
+                </a>
+            </div>
+
+            <p class="text-[10px] text-slate-500 mb-16 uppercase tracking-[0.2em]">
+                Available: 10:00 — 19:00 (Berlin Time / CET)
+            </p>
+
+            <div class="border-t border-slate-800 pt-8 text-[10px] text-slate-500 text-left grid md:grid-cols-2 gap-8 uppercase tracking-widest leading-loose">
+                <div>
+                    <strong>Impressum:</strong><br>
+                    Evgeny | Psychologischer Berater (Online Practice)<br>
+                    Rechtlicher Hinweis: Mein Angebot umfasst psychologische Beratung und Coaching. Keine Heilkunde / Psychotherapie.
+                </div>
+                <div class="md:text-right">
+                    © 2026 Evgeny Private Practice<br>
+                    Designed for Freedom.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchLang(lang) {
+            const deElements = document.querySelectorAll('.lang-de');
+            const ruElements = document.querySelectorAll('.lang-ru');
+            const btnDe = document.getElementById('btn-de');
+            const btnRu = document.getElementById('btn-ru');
+
+            if (lang === 'ru') {
+                deElements.forEach(el => el.style.display = 'none');
+                ruElements.forEach(el => el.style.display = 'inline-block');
+                btnRu.classList.replace('text-slate-400', 'text-blue-600');
+                btnRu.classList.add('bg-slate-100');
+                btnDe.classList.replace('text-blue-600', 'text-slate-400');
+                btnDe.classList.remove('bg-slate-100');
+                document.documentElement.lang = 'ru';
+            } else {
+                ruElements.forEach(el => el.style.display = 'none');
+                deElements.forEach(el => el.style.display = 'inline-block');
+                btnDe.classList.replace('text-slate-400', 'text-blue-600');
+                btnDe.classList.add('bg-slate-100');
+                btnRu.classList.replace('text-blue-600', 'text-slate-400');
+                btnRu.classList.remove('bg-slate-100');
+                document.documentElement.lang = 'de';
+            }
+        }
+    </script>
+</body>
+</html>
